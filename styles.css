@@ -1,0 +1,43 @@
+/* CSS (Hoja de estilos en cascada) */
+/* Propiedades */
+/* Esto es un comentario en CSS */
+/* codigo ASCII */
+/* Especificidad */
+/* Regla de estilo */
+
+/* Hay 3 tipos de selectores*/
+/* 1. Etiquetas : Menos especificas */
+/* 2. Clases: Especificidad media se pone punto y luego el nombre de la clase */
+/* 3. Identificador unico: Especificidad mas alta -> #id */ /* se recomiendan usar en fomularios en js, asociacion entre elementos*/
+
+body {
+  /* color de fondo */
+  background-color: rgb(230, 181, 189);
+  /* Color del texto */
+  color: rgb(44, 42, 42);
+}
+
+h1 {
+  /* Alinear un texto */
+  text-align: center;
+  background-color: rgb(154, 87, 87);
+}
+
+p {
+  background-color: lightpink;
+}
+
+.parrafo-1 {
+  background-color: azure;
+  font-size: 15px;
+}
+
+.parrafoLargo{ 
+    background-color: bisque;
+}
+
+#titulo{
+    font-size: 25px;
+}
+
+
