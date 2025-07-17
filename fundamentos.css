@@ -1,0 +1,93 @@
+/* CSS CON BUENAS PRACTICAS */
+/* 1. Importaciones de tipografia */
+@import url('https://fonts.cdnfonts.com/css/zilla-slab');
+
+/* Definir las variables a utilizar */
+/*Definir paleta de colores, tamaño de fuentes,color de fondo, color de texto */
+/* Se aplican a toda la pagina */
+
+:root {
+    --color-fondo: #F6F7F4;
+    --color-texto: #2E3952;
+    --color-enfasis: #7185BE;
+    --color-enfasis2: #CCD6ED;
+    --tamaño-titulos: 30px;
+
+}
+
+/* Margen externa */  
+/* *selector universal */
+*{margin: 0;
+
+}
+
+body {
+    font-family: 'Zilla Slab', sans-serif;
+    background-color: var(--color-fondo);
+    color:var(--color-texto);
+    /* Quitar scroll vertical */
+    overflow-x: hidden;
+}
+
+
+/* -------------------------------HEADER---------------------- */
+header{
+    /* Atributo para definir el ancho del contendero padre */
+/* 100% ocupa todo el espacio disponible */
+/* 100vw; Ancho de la pantalla (viewport widht) */
+    width: 100vw;
+    /* Alto de pantalla (viewport height)*/
+    /* 1vh = 1% de la altura visible del navegador. */
+/* Entonces, 10vh = 10% de esa altura. */
+    height: 10vh;
+background-color: var(--color-enfasis);
+}
+
+/* Display flex: controlar organizacion de elementos y como se muestran */
+/* centar elementos */
+
+nav{
+    display:flex;
+    /* alinear los elementro dentro de un contenedor */
+    justify-content: center; /*centrar en x */
+    align-items: center; /*centrar en y */
+    gap: 50px;          /*definir espacios entre elementos */
+}
+
+.lista{
+    display: flex;
+    gap: 30px;
+}
+
+.logo{
+
+    width: 60px;
+    height: 60px;
+}
+
+/* --------------------------------MAIN---------------------- */
+
+
+
+
+
+
+/* --------------------------------FOOTER---------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* se pueden agrupar para que los titulos, listas tengan el mismo color
+ /* h1, h2 {color:aqua;} */
