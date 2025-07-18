@@ -35,12 +35,14 @@ header{
     /* Atributo para definir el ancho del contendero padre */
 /* 100% ocupa todo el espacio disponible */
 /* 100vw; Ancho de la pantalla (viewport widht) */
-    width: 100vw;
+    width: 97.8vw;
     /* Alto de pantalla (viewport height)*/
     /* 1vh = 1% de la altura visible del navegador. */
 /* Entonces, 10vh = 10% de esa altura. */
     height: 10vh;
 background-color: var(--color-enfasis);
+margin: 15px;  /* margen exterior*/
+border-radius: 15px; /* borde curvo*/
 }
 
 /* Display flex: controlar organizacion de elementos y como se muestran */
@@ -57,6 +59,7 @@ nav{
 .lista{
     display: flex;
     gap: 30px;
+    list-style: none; /*se usa unicamente para las listas ul y ol, para quitar la numeracion o viñetas. */
 }
 
 .logo{
@@ -65,8 +68,44 @@ nav{
     height: 60px;
 }
 
+a{
+    color:var(--color-fondo);
+text-decoration: none;
+}
+
+
 /* --------------------------------MAIN---------------------- */
 
+main {
+ 
+        width: 80vw;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      
+
+h1,h2{
+    text-align: center;
+}
+
+.contenedor{
+    background-color: var(--color-enfasis2);
+    border-radius: 15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px; /*margen interno*/
+    gap: 20px;
+}
+
+.semantica {
+    width: 50%;
+    border-radius: 15px;
+}
 
 
 
