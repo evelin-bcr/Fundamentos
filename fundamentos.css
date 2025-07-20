@@ -12,89 +12,82 @@
     --color-enfasis: #7185BE;
     --color-enfasis2: #CCD6ED;
     --tamaño-titulos: 30px;
-
 }
 
 /* Margen externa */  
 /* *selector universal */
-*{margin: 0;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Zilla Slab', sans-serif;
     background-color: var(--color-fondo);
-    color:var(--color-texto);
+    color: var(--color-texto);
     /* Quitar scroll vertical */
     overflow-x: hidden;
 }
 
 
 /* -------------------------------HEADER---------------------- */
-header{
+header {
     /* Atributo para definir el ancho del contendero padre */
-/* 100% ocupa todo el espacio disponible */
-/* 100vw; Ancho de la pantalla (viewport widht) */
+    /* 100% ocupa todo el espacio disponible */
+    /* 100vw; Ancho de la pantalla (viewport widht) */
     width: 97.8vw;
     /* Alto de pantalla (viewport height)*/
     /* 1vh = 1% de la altura visible del navegador. */
-/* Entonces, 10vh = 10% de esa altura. */
+    /* Entonces, 10vh = 10% de esa altura. */
     height: 10vh;
-background-color: var(--color-enfasis);
-margin: 15px;  /* margen exterior*/
-border-radius: 15px; /* borde curvo*/
+    background-color: var(--color-enfasis);
+    margin: 15px;  /* margen exterior */
+    border-radius: 15px; /* borde curvo */
 }
 
-/* Display flex: controlar organizacion de elementos y como se muestran */
-/* centar elementos */
-
-nav{
-    display:flex;
-    /* alinear los elementro dentro de un contenedor */
+nav {
+    display: flex;
     justify-content: center; /*centrar en x */
     align-items: center; /*centrar en y */
-    gap: 50px;          /*definir espacios entre elementos */
+    gap: 50px; /*definir espacios entre elementos */
 }
 
-.lista{
+.lista {
     display: flex;
     gap: 30px;
     list-style: none; /*se usa unicamente para las listas ul y ol, para quitar la numeracion o viñetas. */
 }
 
-.logo{
-
+.logo {
     width: 60px;
     height: 60px;
 }
 
-a{
-    color:var(--color-fondo);
-text-decoration: none;
+a {
+    color: var(--color-fondo);
+    text-decoration: none;
 }
 
 
 /* --------------------------------MAIN---------------------- */
-
 main {
- 
-        width: 80vw;
-        margin: auto;
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-      }
-      
+    width: 80vw;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
-h1,h2{
+h1, h2 {
     text-align: center;
 }
 
-.contenedor{
+.contenedor {
     background-color: var(--color-enfasis2);
     border-radius: 15px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -107,24 +100,68 @@ h1,h2{
     border-radius: 15px;
 }
 
+/* ------------------ tabla -------------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #e1e5f2;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 16px;
+    box-shadow: 0 2px 5px #00000011;
+}
 
+th, td {
+    padding: 15px 20px;
+}
 
+th {
+    background-color: var(--color-enfasis);
+    color: var(--color-fondo);
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #dbe2f0;
+}
+
+/* ------------------ formulario -------------------- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+form input[type="submit"],
+form input[type="button"] {
+    background-color: var(--color-enfasis);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover,
+form input[type="button"]:hover {
+    background-color: #5f6ea4;
+}
 
 
 /* --------------------------------FOOTER---------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
